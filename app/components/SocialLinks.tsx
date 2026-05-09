@@ -1,3 +1,5 @@
+import { ContactForm } from "./ContactForm";
+
 export function SocialLinks() {
   const socialLinks = [
     {
@@ -35,6 +37,12 @@ export function SocialLinks() {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center animate-fade-in-up">
           Connect With Me
         </h2>
+        
+        <div className="rounded-lg p-8 shadow-lg border animate-scale-in mb-16" style={{ backgroundColor: 'var(--card-bg)', borderColor: 'var(--card-border)' }}>
+          <h3 className="text-2xl font-bold mb-6 text-center">Send Me a Message</h3>
+          <ContactForm />
+        </div>
+
         <div className="flex justify-center gap-6">
           {socialLinks.map((link, index) => (
             <a
